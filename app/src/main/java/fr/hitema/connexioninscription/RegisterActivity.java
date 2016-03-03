@@ -43,12 +43,10 @@ public class RegisterActivity extends AppCompatActivity {
 
                     Toast.makeText(getApplicationContext(), editNewLogin.getText().toString() + " created!", Toast.LENGTH_SHORT).show();
 
-                    Intent it = new Intent(RegisterActivity.this, MainActivity.class);
+                    Intent it = new Intent(RegisterActivity.this, LoginActivity.class);
                     startActivity(it);
 
                     finish();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Problème", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -56,19 +54,19 @@ public class RegisterActivity extends AppCompatActivity {
 
     public boolean checkForm(){
         if (editNewLogin.getText().toString().length() == 0){
-            editNewLogin.setError("Entrer votre login");
+            editNewLogin.setError("Saisir un login");
         }
 
         if (editNewPwd.getText().toString().length() == 0){
-            editNewPwd.setError("Entrer votre password");
+            editNewPwd.setError("Saisir un mot de passe");
         }
 
         if (editNewPrenom.getText().toString().length() == 0){
-            editNewPrenom.setError("Entrer votre prénom");
+            editNewPrenom.setError("Saisir un prénom");
         }
 
         if (editNewNom.getText().toString().length() == 0){
-            editNewNom.setError("Entrer votre nom");
+            editNewNom.setError("Saisir un nom");
         }
 
         return true;

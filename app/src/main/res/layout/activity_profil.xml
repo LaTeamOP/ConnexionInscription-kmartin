@@ -15,7 +15,8 @@
         android:id="@+id/userLoginView"
         android:layout_alignParentEnd="true"
         android:text="LOGIN"
-        android:gravity="center" />
+        android:gravity="center"
+        android:height="50dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -56,16 +57,22 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mettre à jour les données"
+        android:text="Mettre à jour son profil"
         android:id="@+id/btnUpdateData"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFF"
+        android:layout_alignEnd="@+id/editUserLastName"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editUserLastName" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Deconnexion"
+        android:text="Se déconnecter"
         android:id="@+id/btnDisconnect"
+        android:layout_marginTop="49dp"
         android:layout_below="@+id/btnUpdateData"
         android:layout_centerHorizontal="true" />
 

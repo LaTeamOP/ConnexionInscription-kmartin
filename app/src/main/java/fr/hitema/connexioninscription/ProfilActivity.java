@@ -61,7 +61,7 @@ public class ProfilActivity extends AppCompatActivity {
                     Log.d("Update utilisateur", result.toString());
                     myDB.close();
 
-                    Toast.makeText(getApplicationContext(), userLoginView.getText().toString() + " updated!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Account updated!", Toast.LENGTH_SHORT).show();
 
                     finish();
                     startActivity(getIntent());
@@ -78,7 +78,7 @@ public class ProfilActivity extends AppCompatActivity {
                 editor.clear();
                 editor.commit();
 
-                Intent it = new Intent(ProfilActivity.this, MainActivity.class);
+                Intent it = new Intent(ProfilActivity.this, LoginActivity.class);
                 startActivity(it);
                 finish();
             }
