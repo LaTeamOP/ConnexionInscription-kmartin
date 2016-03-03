@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.engels.connexioninscriptionbdd.ProfilActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userLoginView"
+        android:layout_alignParentEnd="true"
+        android:text="LOGIN"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editUserPwd"
+        android:layout_below="@+id/userLoginView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editUserFirstName"
+        android:layout_below="@+id/editUserPwd"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editUserPwd" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Password"
+        android:id="@+id/editUserLastName"
+        android:autoText="false"
+        android:clickable="false"
+        android:elegantTextHeight="false"
+        android:password="false"
+        android:layout_below="@+id/editUserFirstName"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/editUserFirstName" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mettre à jour les données"
+        android:id="@+id/btnUpdateData"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deconnexion"
+        android:id="@+id/btnDisconnect"
+        android:layout_below="@+id/btnUpdateData"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
